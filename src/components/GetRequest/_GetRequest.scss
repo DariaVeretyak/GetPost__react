@@ -1,0 +1,35 @@
+.getRequest {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+  margin-top: 140px;
+
+  &__title {
+    @include h1;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 29px;
+    padding: 50px 0 0;
+
+    @include iPad {
+      gap: 16px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__showMore {
+    @include button;
+    margin: 50px auto 0;
+  }
+}

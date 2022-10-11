@@ -1,0 +1,310 @@
+@font-face {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+  font-family: "Nunito", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+.header__conteiner {
+  display: flex;
+  width: 1170px;
+  margin: 13px auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header__conteiner {
+    width: 904px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__conteiner {
+    width: 704px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__conteiner {
+    width: 100%;
+    margin: 13px 16px;
+  }
+}
+.header__logo {
+  height: 26px;
+  width: 104px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.header__buttons {
+  display: flex;
+  gap: 10px;
+}
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 34px;
+  border: none;
+  border-radius: 80px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  cursor: pointer;
+  background-color: #f4e041;
+}
+.header__button:hover {
+  background-color: #ffe302;
+}
+.header__button:disabled {
+  background-color: #b4b4b4;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.postRequest {
+  display: flex;
+  flex-direction: column;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  margin-top: 140px;
+}
+.postRequest__title {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
+}
+.postRequest__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 29px;
+  padding: 50px 0 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .postRequest__list {
+    gap: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .postRequest__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@font-face {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+  font-family: "Nunito", sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 370px;
+  height: 254px;
+  padding: 20px;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .card {
+    width: 282px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 344px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
+.card__foto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.card__name {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  text-align: center;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.card__position {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+}
+.card__email {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  background: url("../../images/background.png") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signUp {
+    height: 500px;
+  }
+}
+.signUp__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  padding: 164px 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signUp__conteiner {
+    padding: 88px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .signUp__conteiner {
+    max-width: 328px;
+    padding: 40px 16px 70px;
+    box-sizing: border-box;
+  }
+}
+.signUp__title {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.signUp__content {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding-top: 21px;
+}
+.signUp__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 34px;
+  border: none;
+  border-radius: 80px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  cursor: pointer;
+  background-color: #f4e041;
+  margin-top: 32px;
+}
+.signUp__button:hover {
+  background-color: #ffe302;
+}
+.signUp__button:disabled {
+  background-color: #b4b4b4;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body,
+h1,
+h2,
+p,
+a,
+button,
+ul,
+li {
+  margin: 0;
+}
+
+#root {
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.app__content {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .app__content {
+    width: 904px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app__content {
+    width: 704px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .app__content {
+    width: 100%;
+    margin: 0 16px;
+  }
+}

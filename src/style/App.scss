@@ -1,0 +1,94 @@
+@import "../utils/mixins";
+@import "../utils/typography";
+@import "../utils/vars";
+
+@import "../components/Header/Header";
+@import "../components/PostRequest/PostRequest";
+@import "../components/GetRequest/GetRequest";
+@import "../components/Card/Card";
+@import "../components/SignUp/SignUp";
+@import "../components/Loader/Loader.scss";
+@import "../components/SuccessfullRegistration/SuccessfullRegistration";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+p,
+a,
+button,
+ul,
+li {
+  margin: 0;
+}
+
+#root {
+  background-color: $background-color;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include tablet {
+      width: 904px;
+    }
+  
+    @include iPad {
+      width: 704px;
+    }
+  
+    @include mobile {
+      width: 100%;
+      padding: 0 16px;
+      margin: 0;
+    }
+  }
+
+  &__scrollToTop {
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    display: flex;
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50%;
+    background: url(../images/arrow-back.png) no-repeat center;
+    background-color: $yellow;
+    transform: rotate(90deg);
+    z-index: 1000;
+    transition: opacity 1000ms;
+    opacity: 0;
+    cursor: pointer;
+
+    &--active {
+      opacity: 1;
+    }
+
+    &:hover {
+      box-shadow: -2px -2px 2px #000;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
